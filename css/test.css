@@ -1,0 +1,17 @@
+body{
+    background-color: #1d1d1d;
+}
+
+.box{
+    position: sticky;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.container{
+    width: 100px;
+    height: 200vb;
+    background-color: red;
+}

@@ -1,0 +1,79 @@
+div p {
+    color: blue;
+}
+.test-div{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    /* padding: 40px; */
+    margin-top: 100px;
+}
+.testing{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: black dashed 20px;
+    margin-top: 60px;
+    display:flex;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+.div-image{
+    background-image: url(../img/person.png);
+    width: 300px;
+    height: 500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease-in-out 1s;
+}
+.div-image:hover{
+    background-image: url(../img/person2.png);
+}
+
+.header-main{
+    height: 60px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content:center;
+    gap: 40px 50px;
+    align-items: center;
+}
+
+.header-main div{
+    height: 30px;
+}
+
+.header-main .div-1{
+    /* width: 100px; */
+    /* flex-basis: 400px; */
+    /* flex-shrink: 1; */
+    flex: 0 0 100px;
+    background-color: pink;
+    order: 1;
+}
+
+.header-main .div-2{
+    /* width: 100px; */
+    /* flex-basis: 200px;
+    flex-grow: 2; */
+    flex: 0 0 100px;
+    align-self: flex-end;
+    background-color: green;
+    order: 2;
+}
+
+.header-main .div-3{
+    /* width: 100px; */
+    /* flex-basis: 200px; */
+    flex: 0 0 100px;
+    background-color: blue;
+    order: 3;
+}

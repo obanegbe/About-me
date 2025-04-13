@@ -1,0 +1,298 @@
+main{
+    width: 100%;
+    height: 100vh;      /* vh=view hieght - it means relative to the hieght of the screen*/
+    background-color: #1A253A;
+    margin-top: 60px;
+    background-image: url(../img/obanegbe.png), url(../img/paper.jpg);
+    background-size: 90vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom left 50%, center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 100;
+    column-gap: 200px;
+}
+
+main .main-intro h1{
+    font-size: 6rem;
+    line-height: 1;
+}
+
+main p{                 /*this will target all the paragraph element in the main element*/
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+main a{
+    margin-top: 20px;
+    font-size: 14px;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 10px 20px;
+    width:fit-content ;
+}
+
+main a:hover{
+    background-color: var(--site-color-01-hover);
+}
+
+/* main .main-quote p {
+    border-left:5px solid blue;
+    padding-left: 10px;
+    margin: 20px 0;
+} */
+
+/* main .main-intro { */
+    /* position: relative;         pushes the content relative it's position */
+    /* right: 20vh; */
+    /* padding-top: 10vh; */
+/* } */
+
+main .main-intro {
+    padding-top: 10vh;
+}
+
+main .main-quote {
+    padding-top: 10vh;
+}
+
+
+/* The Category Section */
+.index-category{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.index-category p{
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.index-category-box{
+    width: 20rem;
+    height: 20rem;
+    background-color: #111;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.index-category-box:nth-child(2){
+    background-image: url(../img/category/webdevelopment.jpg);
+}
+
+.index-category-box:nth-child(3){
+    background-image: url(../img/category/uiuxdesign.jpg);
+}
+
+.index-category-box:nth-child(4){
+    background-image: url(../img/category/pmanagement.jpg);
+}
+ 
+.index-category-box:nth-child(5){
+    background-image: url(../img/category/tutorial.jpg);
+    
+}
+
+.overlay{
+    position: absolute;
+    background-color: #1A253A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    transition: all ease-in-out 300ms;
+}
+
+.index-category-box:hover .overlay{
+    opacity: 0;
+}
+
+.index-category-box-h3 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: -2px 4px 3px #000;     /*x-axis, y-axis, blur value, colour*/
+    z-index: 1;
+}
+
+/* About section */
+
+.index-about{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1A253A;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+.index-about-img img{
+    width: 200px;
+    border-radius: 300px;
+}
+
+.index-about-text{
+    flex-basis: 400px;
+}
+
+/* .index-about-text p{
+    padding: 20px 0;
+} */
+
+.index-about-text a{
+    font-size: 1rem;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 5px 10px;
+    width:fit-content ;
+}
+
+.index-about-text a:hover{
+    background-color: var(--site-color-01-hover);
+}
+
+.index-about-skill{
+    width: 300px;
+}
+
+.index-about-skill-bar{
+    width: calc(100% - 8);
+    height: 20px;
+    border: 4px solid rgb(4, 4, 80);
+}
+
+.index-about-skill-bar-fill{
+    height: 100%;
+    background-color: var(--site-color-01);
+}
+
+.htmlcss{
+    width: 97%;
+}
+
+.JS{
+    width: 60%;
+}
+
+.RT{
+    width: 85%;
+}
+
+.PY{
+    width: 80%;
+}
+
+.SQ{
+    width: 70%;
+}
+
+.VE{
+    width: 88%;
+}
+
+/* mobile version */
+
+@media (max-width: 600px) {
+
+main{
+    align-items:flex-end;
+}
+
+main .main-intro{
+    padding-bottom: 8vh;
+}
+
+main .main-intro h1{
+    text-align: center;
+}
+
+main p{
+    text-align: center;
+    padding: 0 10%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+main a{
+    margin: auto;
+}
+
+main .main-quote {
+        display: none;
+    }
+        
+
+/* The Category Section */
+.index-category{
+    padding: 40px 0 20px;
+    row-gap: 10px;
+}
+
+.index-category p{
+    padding-bottom: 20px;
+}
+
+.index-category-box{
+    width: calc(100% - 20px);
+    height: 160px;
+}
+
+/* About section */
+
+.index-about{
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.index-about-img{
+    width: 60%;
+}
+
+.index-about-img img{
+    width: 100%;
+    border-radius: 300px;
+}
+
+.index-about-text{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/* .index-about-text p{
+    padding: 20px 0;
+} */
+
+.index-about-text a{
+    margin: 0 auto;
+}
+
+.index-about-text a:hover{
+    background-color: var(--site-color-01-hover);
+}
+
+.index-about-skill{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+}

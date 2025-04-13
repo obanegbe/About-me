@@ -3,44 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obanegbe Profile</title>
+    <title>Obagetlevels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <nav>
+
+    <!-- Burger menur section -->
+     <nav>
+        <nav class="burger-menu">
             <ul>
-                <a href="#about"><li>About me</li></a>
-                <a href="#hobbies"><li>Hobbies</li></a>
-                <a href="#contact"><li>Contact Me</li></a>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">ABOUT-US</a></li>
+                <li><a href="#">CONTACT-US</a></li>
             </ul>
         </nav>
+     </nav>
+
+
+    <!-- header section -->
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="img/loggo.png" alt="The kings logo">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">ABOUT-US</a></li>
+                    <li><a href="#">CONTACT-US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-main-sm">
+            <a href="https://facebook.com"><div class="header-main-sm-fb"></div></a>
+            <a href="https://instagram.com"><div class="header-main-sm-in"></div></a>
+
+            <div class="burger-menu-btn"></div>                <!--burger menu button-->
+
+        </div>
     </header>
-    <section>
-        <h2 id="about">About Me</h2>
-        <h3>A Suftware Developer & a UI/UX Designer</h3>
-        <img src="image/obanegbe.png" alt="Mr Obanegbe">
-        <h2>Bio</h2>
-        <p>Oluwatobi Obanegbe is the tech support and client success specialist at Eduis Solutions Limited, an ed-tech company based in Nigeria. <br>
-            He is passionate about building affordable and intuitive education solutions for all kinds of learners and tutors on the African continent and hopes to achieve that through his team within the next 5 years. <br>
-            Before Eduis Solutions Limited, Oluwatobi was a successful school administrator with 50% yearly growth and successful client success tech support/specialists with 100% clients retention.
-        </p>
+
+    <main>
+        <div class="main-intro">
+            <h1>Welcome <br> to my first <br> website</h1>
+            <p>Lorem Ipsum is simply dummy text<br>of the printing and typesetting<br> industry. 
+                Lorem Ipsum has.</p>
+                <a href="#">My work</a>
+                <br><br>
+        </div>            
+        <div class="main-quote">
+            <p>"Happiness is the key to <br>success. Success is not <br>the key to happiness."
+                <br><br> Prof. Obanegbe</p>
+                <br>
+            <p>"You can never over pray. <br>You can only under pray. <br>Prayer never dies."
+                    <br><br>Dr. Olukoya</p> 
+        </div>
+    </main>
+
+<!-- CATEGORY SECTION -->
+    <section class="index-category">
+        <p>Categories</p>
+        <a href="#" class="index-category-box">
+            <div class="overlay"></div>
+            <h3 class="index-category-box-h3">
+                Web Development
+            </h3>
+        </a>
+
+        <a href="#" class="index-category-box">
+            <div class="overlay"></div>
+            <h3 class="index-category-box-h3">
+                UI/UX Design
+            </h3>
+        </a>
+
+        <a href="#" class="index-category-box">
+            <div class="overlay"></div>
+            <h3 class="index-category-box-h3">
+                Project Management
+            </h3>
+        </a>
+
+        <a href="#" class="index-category-box">
+            <div class="overlay"></div>
+            <h3 class="index-category-box-h3">
+                Tutorials
+            </h3>
+        </a>
     </section>
-    <section>
-        <h2 id="hobbies">Hobbies</h2>
-        <ul>
-            <li>Writing code</li>
-            <li>Designing with Figma</li>
-            <li>Singing and playimg the keyboard</li>
-        </ul>
-    </section>
-</body>
-<footer>
-    <div>
-        <h2 id="contact">Contact Me</h2>
-        <p>oluwatobi.obanegbe@gmail.com</p>
-        <a href="https://www.linkedin.com/in/oluwatobi-obanegbe-16169133/" target="_blank">Linkedin</a>
-        <a href="https://web.facebook.com/obanegbe.oluwatobi" target="_blank">Facebook</a>
-        <a href="https://www.x.com/obanegbe" target="_blank">Twitter</a>
+
+    <!-- The About Section -->
+     <section class="index-about">
+        <div class="index-about-img">
+            <img src="img/me.jpg" alt="Obanegbe image">
+        </div>
+        <div class="index-about-text">
+            <h2>About me in brief</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable 
+                content of a page when looking at its layout. Point of using Lorem Ipsum. 
+                <br> <br> 
+                That it has a more-or-less normal distribution of letters, as opposed to 
+                using 'Content here, content here', making it look like readable English.</p>
+                <a href="#">Know more</a>
+        </div>
+        <div class="index-about-skill">
+            <p>HTML & CSS</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill HTMLCSS"></div>
+            </div>
+            <p>JavaScript</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill JS"></div>
+            </div>
+            <p>React</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill RT"></div>
+            </div>
+            <p>Python</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill PY"></div>
+            </div>
+            <p>SQL</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill SQ"></div>
+            </div>
+            <p>Video Editing</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill VE"></div>
+            </div>
+        </div>
+
+
+     </section>
+
+<!-- The Footer Section -->
+ <footer class="footer-main">
+    <div class="wrapper-main footer-main-flex">
+        <div class="footer-testimony">
+            <img src="img/portrait/1.png" alt="">
+            <p>I love what Tobi has done for us for the past 10 years. He has transformed our work</p>
+        </div>
+
+        <div class="footer-testimony">
+        <img src="img/portrait/2.jpg" alt="">
+            <p>I love what Tobi has done for us for the past 10 years. He has transformed our work</p>
+        </div>
+
+        <div class="footer-testimony">
+        <img src="img/portrait/3.png" alt="">
+            <p>I love what Tobi has done for us for the past 10 years. He has transformed our work</p>
+        </div>
+
+        <div class="footer-testimony">
+        <img src="img/portrait/4.png" alt="">
+            <p>I love what Tobi has done for us for the past 10 years. He has transformed our work</p>
+        </div>
+
+        <div class="footer-testimony">
+        <img src="img/portrait/5.jpg" alt="">
+            <p>I love what Tobi has done for us for the past 10 years. He has transformed our work</p>
+        </div>
+
+        <a class="footer-get-in-touch" href="https://www.linkedin.com/in/oluwatobi-obanegbe-16169133/" target="_blank">Get in touch with me</a>
+
+        <div class="footer-sitemap">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Video Editing</a></li>
+            </ul>
+
+            <ul>
+                <li><p>We are the best when it come to everything technology in the world</p></li>
+            </ul>
+
+            <ul>
+                <li><p>Get in touch</p></li>
+                <li><p>2348075279935</p></li>
+                <li><p>oophemi@gmail.com</p></li>
+                <li><p>Obanegbe Street, Obanegbe Road</p></li>
+            </ul>
+        </div>
     </div>
-</footer>
+ </footer>
+
+<!-- <script src="js/main.js"></script> -->
+
+</body>
 </html>
